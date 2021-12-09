@@ -12,7 +12,7 @@ public class MainClass {
 	
 	private void start() {    
 		//Create knapsacks
-		knapsack = new Knapsack(5, 5); 			//maxCapacity, availableCapacity
+		knapsack = new Knapsack(5, 5); 				//maxCapacity, availableCapacity
 		listKnapsacks.add(knapsack);
 		knapsack = new Knapsack(10, 10);
 		listKnapsacks.add(knapsack);

@@ -110,15 +110,15 @@ public class Controller {
 	public void printAllItems() {		
 		System.out.println("\nAll items");
 		for(Item a : listItems) {
-    		System.out.println("w: " + a.getWeight() + "  " + "v: " + a.getValue() + "  benefit: " + a.getBenefitPerWeight());
-    	}
+    			System.out.println("w: " + a.getWeight() + "  " + "v: " + a.getValue() + "  benefit: " + a.getBenefitPerWeight());
+    		}
 	}
 	
 	public void printListUnusedItems() {		
 		System.out.println("\nNon used items");
 		for(Item a : listItems) {
-    		System.out.println("w: " + a.getWeight() + "  " + "v: " + a.getValue() + "  benefit: " + a.getBenefitPerWeight());
-    	}
+    			System.out.println("w: " + a.getWeight() + "  " + "v: " + a.getValue() + "  benefit: " + a.getBenefitPerWeight());
+    		}
 	}
 
 	public void printResultGreedyAlgorithm() {	
@@ -129,9 +129,9 @@ public class Controller {
 			System.out.println("Bag " + a);
 			int totalValue = 0;
 			for(Item b : listKnapsacks.get(a).getlistItemsInKnapsack()) {
-	    		System.out.println("w: " + b.getWeight() + "  v: " + b.getValue() + "  benefit: " + b.getBenefitPerWeight());
-	    		totalValue += b.getValue();
-	    	}
+	    			System.out.println("w: " + b.getWeight() + "  v: " + b.getValue() + "  benefit: " + b.getBenefitPerWeight());
+	    			totalValue += b.getValue();
+	    		}
 			System.out.println("Bag " + a + ": Total value with Greedy algorithm: " + totalValue);
 		}
 		
@@ -145,9 +145,9 @@ public class Controller {
 			System.out.println("Bag " + a);
 			int totalValue = 0;
 			for(Item b : listKnapsacks.get(a).getlistItemsInKnapsack()) {
-	    		System.out.println("w: " + b.getWeight() + "  v: " + b.getValue() + " benefit: " + b.getBenefitPerWeight());
-	    		totalValue += b.getValue();
-	    	}
+	    			System.out.println("w: " + b.getWeight() + "  v: " + b.getValue() + " benefit: " + b.getBenefitPerWeight());
+	    			totalValue += b.getValue();
+	    		
 			System.out.println("Bag " + a + ": Total value with NeighboorSearch algorithm: " + totalValue);
 		}		
 	}	
